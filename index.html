@@ -11,9 +11,9 @@
     <div class="main">
     <h1 class="title">Patrick's games</h1>
     <p class="intro">A list of the games I've made over the years. Mostly these are game jam games.
-        If you're considering me for a job please don't let this dissuade you. 
+        If you're considering me for a job please don't let this deter you. 
     </p>
-    <p><a href="https://twitter.com/patrickwtech" target="_blank">Twitter @patrickwtech</a></p>
+    <p><a href="https://twitter.com/patrickwtech" target="_blank">Twitter @patrickwtech</a> (note @JimmyNoShoes was my old twitter handle which I changed)</p>
 
 
     <script src="https://unpkg.com/vue@3"></script>
@@ -35,8 +35,8 @@
 
                 <p class="game-description" v-html="game.description"></p>
                 <p class="game-instructions"><strong>How to play:</strong> <span v-html="game.instructions"></span></p>
-                <p class="game-reception"><strong>Reception:</strong><span v-html="game.reception"></span></p>
-                <p class="game-link"><strong><a :href="game.url" target="_blank">{{ game.platform }}</a></strong></p>
+                <p class="game-reception"><strong>Reception: </strong><span v-html="game.reception"></span></p>
+                <p class="game-link"><strong><a :href="game.url" target="_blank">{{ game.platform }} 🡥</a></strong></p>
                 </div>
 
             </li>
