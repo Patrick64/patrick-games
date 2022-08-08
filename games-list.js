@@ -84,5 +84,15 @@ const games = [
         instructions: 'Instructions on start screen. Note that on mobile you can tap the fish bowl to restart the level!',
         reception: `It didn't rank in the top 10 for the game jam. I was very pleased with it but it may have been too hard.`,
         image: 'tumble-fish.jpg'
+    },
+    {
+        name: 'Chip in Unknown World',
+        url: './assets/games/chip-in-unknown-world-amstrad.SNA',
+        release: '1994-01-01',
+        platform: 'Download snapshot for emulator',
+        description: 'My magnum opus which I made on the Amazon CPC 464 aged about 11. You must collect all the items and get to the spaceship to finish the level. ',
+        instructions: `First you'll need to download <a href="http://www.winape.net/" target="_blank">WinAPE</a> then you'll need to set the <a href="./games/WinAPE.ini">WinAPE.ini to this one</a> then load the downloaded snapshot, then setup the joystick controls in winape.`,
+        reception: `My dad was unimpressed with the spelling.`,
+        image: 'chip-in-unknown-world.png'
     }
 ]
