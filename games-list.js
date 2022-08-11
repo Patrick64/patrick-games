@@ -90,9 +90,19 @@ const games = [
         url: './assets/games/chip-in-unknown-world-amstrad.SNA',
         release: '1994-01-01',
         platform: 'Download snapshot for emulator',
-        description: 'My magnum opus which I made on the Amazon CPC 464 aged about 11. You must collect all the items and get to the spaceship to finish the level. ',
-        instructions: `First you'll need to download <a href="http://www.winape.net/" target="_blank">WinAPE</a> then you'll need to set the <a href="./games/WinAPE.ini">WinAPE.ini to this one</a> then load the downloaded snapshot, then setup the joystick controls in winape.`,
+        description: 'My magnum opus which I made on the Amstrad CPC 464 (with OG green screen) aged about 11. You must collect all the items and get to the spaceship to finish the level. ',
+        instructions: `I wouldn't bother but if you must first you'll need to download <a href="http://www.winape.net/" target="_blank">WinAPE</a> then you'll need to set the <a href="./games/WinAPE.ini">WinAPE.ini to this one</a> then load the downloaded snapshot, then setup the joystick controls in winape.`,
         reception: `My dad was unimpressed with the spelling.`,
         image: 'chip-in-unknown-world.png'
+    }, {
+        name: 'Boris Pants',
+        url: 'https://patrick64.github.io/boris-pants/',
+        release: '2016-10-01',
+        platform: '🖥️ Play in browser for desktop',
+        description: `Boris Johnson is trapped on a zipline and lying so much his pants are on fire. The fire brigade must put his pants out before it burns down London. Made for a Brexit themed jam a friend organised. Features text and audio clips of the various porkies he has told. They were not hard to find. `,
+        instructions: `Move mouse to direct the water hose to put the flames out`,
+        reception: `Sadly this was not quite enough to stop Brexit. Although thanks to Boris' continued lying in Parliament it's still relevant today.`,
+        image: 'boris-pants.png'
     }
+
 ]
