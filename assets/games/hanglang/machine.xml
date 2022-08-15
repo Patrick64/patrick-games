@@ -1,0 +1,51 @@
+<machine id="deskpro386" type="pcx86" border="1" pos="center" background="default" debugger="available">
+	<name pos="center">COMPAQ DeskPro 386, 4Mb RAM, IBM VGA</name>
+	<computer id="deskpro386-vga-4096k" name="COMPAQ DeskPro 386" buswidth="32"></computer>
+	<cpu id="cpu386" model="80386"></cpu>
+	<ram id="ramLow" addr="0x00000" test="false" size="0xa0000" comment="ROM BIOS memory test has been disabled"></ram>
+	<ram id="ramCPQ" addr="0xfa0000" size="0x60000" comment="COMPAQ memory at 0xFA0000"></ram>
+	<ram id="ramExt" addr="0x100000" size="0x300000" comment="Extended memory at 0x100000"></ram>
+	<rom id="romBIOS" addr="0xf8000" size="0x8000" alias="[0xf0000,0xffff0000,0xffff8000]" file="/machines/pcx86/compaq/deskpro386/rom/1988-01-28/1988-01-28.json"></rom>
+	<video id="videoVGA" model="vga" screenWidth="1280" screenHeight="960" touchScreen="mouse" autoLock="true" pos="center" padding="8px">
+	<menu>
+		<title>VGA Color Display</title>
+		<control type="container" pos="right">
+			<control type="led" label="Caps" binding="caps-lock" padLeft="8px"></control>
+			<control type="led" label="Num" binding="num-lock" padLeft="8px"></control>
+			<control type="led" label="Scroll" binding="scroll-lock" padLeft="8px"></control>
+			<control type="button" binding="fullScreen" padLeft="8px;line-height:1em">Full Screen</control>
+		</control>
+	</menu>
+	<rom id="romVGA" addr="0xc0000" size="0x6000" file="/machines/pcx86/ibm/video/vga/1986-10-27/IBM-VGA.json" notify="videoVGA[0x378d,0x3f8d,0x4eba]"></rom>
+	</video>
+	<fdc id="fdcNEC" autoMount="{A:{name:"PC DOS 2.00 (Disk 1)"}, B:{name:"PC DOS 2.00 (Disk 2)"}}" diskettes="/configs/pcx86/diskettes.json,/configs/pcx86/private.json" server="/diskettes" sortBy="name" pos="left" padLeft="8px" padBottom="8px">
+	<control type="list" binding="listDrives"></control>
+	<control type="list" binding="listDisks">
+	</control>
+	<control type="button" binding="loadDisk">Load</control>
+	<control type="button" binding="saveDisk" padRight="8px">Save</control>
+	<control type="description" binding="descDisk" padRight="8px"></control>
+	<control type="file" binding="mountDisk"></control>
+	</fdc>
+	<hdc id="hdcAT" type="ATAPI1" drives="[{name:"47Mb Hard Disk",type:5}]">
+	<control type="button" binding="saveHD0" padLeft="8px" padBottom="8px" padRight="8px">Save HD</control>
+	<control type="list" binding="listDisks" style="display:none">
+		<disk path="/discs/cds005/microsoft/reference/Bookshelf-Windows-1991/cdrom">Bookshelf for Windows (1991)</disk>
+		<disk path="/discs/cds001/microsoft/games/Pandoras-Box/cdrom">Pandora's Box (1999)</disk>
+		<disk path="/discs/cds002/microsoft/tools/MSPL10/cdrom">Programmer's Library 1.0 (1988)</disk>
+		<disk path="/discs/cds002/others/misc/DKMMTWTW/cdrom">The Way Things Work (1994)</disk>
+	</control>
+	</hdc>
+	<keyboard id="keyboard" model="us84" style="pointer-events:none;">
+	<control type="container" style="pointer-events:auto;">
+		<control type="button" binding="ctrl-alt-del" padLeft="8px" padBottom="8px">Ctrl-Alt-Del</control>
+		<control type="button" binding="keyboard" padLeft="8px" padBottom="8px">Keys</control>
+	</control>
+	<!-- soft-keyboard -->
+	<!-- soft-keyboard-mobile -->
+	</keyboard>
+	<chipset id="chipset" model="deskpro386" floppies="[1200,1200]" monitor="vga"></chipset>
+	<serial id="com1" adapter="1"></serial>
+	<serial id="com2" adapter="2"></serial>
+	<mouse serial="com1"></mouse>
+</machine>
