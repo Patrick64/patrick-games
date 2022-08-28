@@ -103,6 +103,17 @@ const games = [
         instructions: `Move mouse to direct the water hose to put the flames out`,
         reception: `Sadly this was not quite enough to stop Brexit. Although thanks to Boris' continued lying in Parliament it's still relevant today.`,
         image: 'boris-pants.png'
+    }, {
+        name: 'Swing the Cat',
+        url: './assets/games/swing-the-cat.zip',
+        release: '2005-11-20',
+        platform: '🖥️ Download for Windows',
+        description: `A one-button game - you are a cat being swung by a knight but you can dig in your claws to move around the
+         level and collect all the fish. Features some classical midi music. Made for a one button themed game jam in a week. Made in Real Basic.`,
+         instructions: `First download and extract the zip file. Then run Swing The Cat.exe, Windows defender 
+        will complain but click More Info and Run Anyway (you can trust me bro). Change the direction the cat/knight are turning by pressing space, collect the fish with the cat end and murder dogs with knight end.`,
+        reception: `Amazingly the <a href="http://ravuya.com/1w1b2/results.html" target="_blank">game jam page is still up</a>. It came 8th out of 33.`,
+        image: 'swing-the-cat.png'
     }
 
 ]
