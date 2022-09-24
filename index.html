@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Patrick's games</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./games-list.js"></script>
 </head>
 
-<body>
-    <div class="main">
+<body >
+    <div class="main" id="app">
     <h1 class="title">Patrick's games</h1>
     <p class="intro">A list of the games I've made over the years. Mostly these are game jam games.
         If you're considering me for a job please don't let this deter you. 
     </p>
+
+    <div class="sort-by-wrap">
+        <span>Sort by:</span>
+        <select class="sort-by" v-model="sortBy">
+            <option :value="'embarrassing'"> Lease to most embarrassing</option>
+            <option :value="'date'">Release date</option>
+        </select>
+    </div>
+
     <p><a href="https://twitter.com/patrickwtech" target="_blank">Twitter @patrickwtech</a> (@JimmyNoShoes was my old twitter handle)</p>
 
-
-    <script src="https://unpkg.com/vue@3"></script>
-    <script src="./games-list.js"></script>
-
-    <div id="app">
+    <div>
 
         <ul class="game-list">
-            <li class="game-item" v-for="game in games" :key="game.url">
+            <li class="game-item" v-for="game in sortedGames" :key="game.url">
                 <div class="image-col">
                 <a :href="game.url" target="_blank">
                     <img class="game-img" :src="'./assets/images/' + game.image">
@@ -35,12 +42,13 @@
 
                 <p class="game-description" v-html="game.description"></p>
                 <p class="game-instructions"><strong>How to play:</strong> <span v-html="game.instructions"></span></p>
-                <p class="game-reception"><strong>Reception: </strong><span v-html="game.reception"></span></p>
+                <p class="game-reception" v-if="game.reception"><strong>Reception: </strong><span v-html="game.reception"></span></p>
                 <p class="game-link"><strong><a :href="game.url" target="_blank">{{ game.platform }} </a></strong></p>
                 </div>
 
             </li>
         </ul>
+    </div>
     </div>
 
     <script>
@@ -49,9 +57,16 @@
         createApp({
             data() {
                 return {
-                    games: games
+                    games: games,
+                    sortBy: 'embarrassing'
+                }
+            }, 
+            computed: {
+                sortedGames() {
+                    return this.sortBy === 'date' ? [...this.games].sort((a,b) => new Date(b.release) - (new Date(a.release))  ) : this.games
                 }
             }
+            
         }).mount('#app')
     </script>
 

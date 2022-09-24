@@ -1,4 +1,56 @@
 const games = [
+
+    {
+        name: 'Tumble Fish',
+        url: 'https://js13kgames.com/games/tumble-fish/index.html',
+        release: '2012-09-09',
+        platform: '🖥️ 📱 Play in browser for desktop, tablet or mobile',
+        description: 'A platform game where on mobile you can tilt your phone left and right (like LocoRoco) to help get the fish bowl to the home. Made for the <a href="https://2012.js13kgames.com/" target="_blank">Js1kGamesJam</a>. The whole game fits in 13kb of javascript.',
+        instructions: 'Instructions on start screen. Note that on mobile you can tap the fish bowl to restart the level!',
+        reception: `It didn't rank in the top 10 for the game jam. I was very pleased with it but it may have been too hard.`,
+        image: 'tumble-fish.jpg'
+    },
+
+    {
+        name: 'Captain Nicebeard',
+        url: 'http://nicebeard.patrickw.tech/',
+        release: '2015-10-01',
+        platform: '🖥️ Play in browser for desktop',
+        description: `Captain Nicebeard is a reverse pirate where instead of making landlubbers walk the plank and plundering treasure he rescues ship mates and distributes coin.
+            Made for the Js13kGames game jam which had the theme 'Reversed'. It runs on a server and stores the play through of each player and then replays it back as another player on subsequent plays thus making it
+            a challenge to avoid other players and fire coins at them but without the need to have people playing at the same time. The whole game fits in 13kb. The backgrounds are procedurally generated. `,
+        instructions: 'Use arrow keys to rotate ship. Press Z/X to fire coins at other boats. Collect all the shipmates. Note it is kind of buggy when going to next level so it will restart you back sometimes sadly.',
+        reception: `This got <a href="https://2015.js13kgames.com/" target="_blank">3rd place for the Server category</a>. Unfortunately their server kept restarting and so losing the previous play throughs so it seemed fairly empty to people playing it.`,
+        image: 'nicebeard.jpg'
+    },
+
+    {
+        name: 'Swing the Cat',
+        url: './assets/games/swing-the-cat.zip',
+        release: '2005-11-20',
+        platform: '🪟 Download for Windows',
+        description: `A one-button game - you are a cat being swung by a knight but you can dig in your claws to move around the
+         level and collect all the fish. Features some classical midi music. Made for a one button themed game jam in a week. Made in Real Basic.`,
+        instructions: `First download and extract the zip file. Then run Swing The Cat.exe, Windows defender 
+        will complain but click More Info and Run Anyway (you can trust me bro). Change the direction the cat/knight are turning by pressing space, collect the fish with the cat end and murder dogs with knight end.`,
+        instructions: 'Just press space to switch which way you are spinning.',
+        reception: `Amazingly the <a href="http://ravuya.com/1w1b2/results.html" target="_blank">game jam page is still up</a>. It came 8th out of 33.`,
+        image: 'swing-the-cat.png'
+    },
+
+    {
+        name: 'Precious Things',
+        url: 'https://jimmynoshoes.itch.io/precious-things',
+        release: '2018-08-12',
+        platform: 'Play in browser for desktop only',
+        description: `Your house is shrinking and you have pile objects on top of each other jenga style to make sure they don't get crushed.
+        Made for Ludum Dare game jam over 48 hours which had the theme 'Running out of space' using Construct2. I was going to do something
+        much more ambitious but then settled on this simple game. `,
+        instructions: 'Drag and drop objects.',
+        reception: 'It came in <a href="https://ldjam.com/events/ludum-dare/42/precious-things" target="_blank">437th out of 2013</a>, and for the theme it came in at 89th.',
+        image: 'precious-things.png'
+    },
+
     {
         name: 'Clock Watcher',
         url: 'https://patrick64.github.io/clock-watcher/',
@@ -12,18 +64,18 @@ const games = [
         I forced a colleague at work to play it, he let out a groan of pain when he had to replay the pacman level`,
         image: 'clock-watcher.jpg',
     },
+
     {
-        name: 'Timeless',
-        url: 'https://jimmynoshoes.itch.io/timeless',
-        release: '2016-03-10',
-        platform: '😔 See it not working',
-        description: `A story based game that uses google streetview. It doesn't work anymore as google have updated 
-        streetview for the areas it covers. When it did work it used dialogue boxes for the story and ghouls would chase you. The ghouls were actually
-        maps markers in streetview. Made for the Nar8 game jam.`,
-        instructions: `It doesn't work anymore sorry`,
-        reception: `This got <a href="https://itch.io/jam/nar8-jam/results" target="_blank">second place</a> in the game jam!`,
-        image: 'timeless.png'
+        name: 'Boris Pants',
+        url: 'https://patrick64.github.io/boris-pants/',
+        release: '2016-10-01',
+        platform: '🖥️ Play in browser for desktop',
+        description: `Boris Johnson is trapped on a zipline and lying so much his pants are on fire. The fire brigade must put his pants out before it burns down London. Made for a Brexit themed jam a friend organised. Features text and audio clips of the various porkies he has told. They were not hard to find. `,
+        instructions: `Move mouse to direct the water hose to put the flames out`,
+        reception: `Sadly this was not quite enough to stop Brexit. Although thanks to Boris' continued lying in Parliament it's still relevant today.`,
+        image: 'boris-pants.png'
     },
+
     {
         name: 'Space Suckers',
         url: 'https://jimmynoshoes.itch.io/space-suckers',
@@ -36,17 +88,31 @@ const games = [
         image: 'space-suckers.png'
     },
     {
-        name: 'Precious Things',
-        url: 'https://jimmynoshoes.itch.io/precious-things',
-        release: '2018-08-12',
-        platform: 'Play in browser for desktop only',
-        description: `Your house is shrinking and you have pile objects on top of each other jenga style to make sure they don't get crushed.
-        Made for Ludum Dare game jam over 48 hours which had the theme 'Running out of space' using Construct2. I was going to do something
-        much more ambitious but then settled on this simple game. `,
-        instructions: 'Drag and drop objects.',
-        reception: 'It came in <a href="https://ldjam.com/events/ludum-dare/42/precious-things" target="_blank">437th out of 2013</a>, and for the theme it came in at 89th.',
-        image: 'precious-things.png'
-    }, {
+        name: 'Ancient Snake',
+        url: 'https://patrick64.github.io/AncientSnake/',
+        release: '2016-08-29',
+        platform: '🖥️ 📱 Play in browser for desktop or tablet',
+        description: `Play snake on an old nokia phone. Made for Ludum Dare with the theme Ancient Technology`,
+        instructions: 'Use arrows keys on desktop or tap the arrow keys on the mobile',
+        reception: '',
+        image: 'snake.png'
+    },
+
+    {
+        name: 'Timeless',
+        url: 'https://jimmynoshoes.itch.io/timeless',
+        release: '2016-03-10',
+        platform: '😔 See it not working',
+        description: `A story based game that uses google streetview. It doesn't work anymore as google have updated 
+        streetview for the areas it covers. When it did work it used dialogue boxes for the story and ghouls would chase you. The ghouls were actually
+        maps markers in streetview. Made for the Nar8 game jam.`,
+        instructions: `It doesn't work anymore sorry`,
+        reception: `This got <a href="https://itch.io/jam/nar8-jam/results" target="_blank">second place</a> in the game jam!`,
+        image: 'timeless.png'
+    },
+    
+    
+    {
         name: 'Batdolphin',
         url: 'https://patrick64.github.io/batdolphin/',
         release: '2017-12-01',
@@ -65,6 +131,7 @@ const games = [
         reception: `I can't remember it was so long ago.`,
         image: 'gin-monster-bob.png'
     },
+
     {
         name: 'The Tea Room',
         url: 'https://patrick64.github.io/the-tearoom/',
@@ -75,16 +142,7 @@ const games = [
         reception: `I think people found it novel but a bit confusing.`,
         image: 'the-tea-room.png'
     },
-    {
-        name: 'Tumble Fish',
-        url: 'https://js13kgames.com/games/tumble-fish/index.html',
-        release: '2012-09-09',
-        platform: '🖥️ 📱 Play in browser for desktop, tablet or mobile',
-        description: 'A platform game where on mobile you can tilt your phone left and right (like LocoRoco) to help get the fish bowl to the home. Made for the <a href="https://2012.js13kgames.com/" target="_blank">Js1kGamesJam</a>. The whole game fits in 13kb of javascript.',
-        instructions: 'Instructions on start screen. Note that on mobile you can tap the fish bowl to restart the level!',
-        reception: `It didn't rank in the top 10 for the game jam. I was very pleased with it but it may have been too hard.`,
-        image: 'tumble-fish.jpg'
-    },
+
     {
         name: 'Chip in Unknown World',
         url: './assets/games/chip-in-unknown-world-amstrad.SNA',
@@ -94,26 +152,6 @@ const games = [
         instructions: `I wouldn't bother but if you must first you'll need to download <a href="http://www.winape.net/" target="_blank">WinAPE</a> then you'll need to set the <a href="./games/WinAPE.ini">WinAPE.ini to this one</a> then load the downloaded snapshot, then setup the joystick controls in winape.`,
         reception: `My dad was unimpressed with the spelling.`,
         image: 'chip-in-unknown-world.png'
-    }, {
-        name: 'Boris Pants',
-        url: 'https://patrick64.github.io/boris-pants/',
-        release: '2016-10-01',
-        platform: '🖥️ Play in browser for desktop',
-        description: `Boris Johnson is trapped on a zipline and lying so much his pants are on fire. The fire brigade must put his pants out before it burns down London. Made for a Brexit themed jam a friend organised. Features text and audio clips of the various porkies he has told. They were not hard to find. `,
-        instructions: `Move mouse to direct the water hose to put the flames out`,
-        reception: `Sadly this was not quite enough to stop Brexit. Although thanks to Boris' continued lying in Parliament it's still relevant today.`,
-        image: 'boris-pants.png'
-    }, {
-        name: 'Swing the Cat',
-        url: './assets/games/swing-the-cat.zip',
-        release: '2005-11-20',
-        platform: '🖥️ Download for Windows',
-        description: `A one-button game - you are a cat being swung by a knight but you can dig in your claws to move around the
-         level and collect all the fish. Features some classical midi music. Made for a one button themed game jam in a week. Made in Real Basic.`,
-         instructions: `First download and extract the zip file. Then run Swing The Cat.exe, Windows defender 
-        will complain but click More Info and Run Anyway (you can trust me bro). Change the direction the cat/knight are turning by pressing space, collect the fish with the cat end and murder dogs with knight end.`,
-        reception: `Amazingly the <a href="http://ravuya.com/1w1b2/results.html" target="_blank">game jam page is still up</a>. It came 8th out of 33.`,
-        image: 'swing-the-cat.png'
-    }
+    },
 
 ]
