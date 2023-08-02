@@ -83,8 +83,7 @@ const games = [
             style mini-games where you have to make it through the work day. Win an office chair race, prop eyes open during a boring meeting, collect all the tea, jump over miserable coworkers to get the cake and beat up a printer.`,
         instructions: `On desktop use the arrow keys to move around/jump or beat up the printer. On tablet you can tap and drag to move around. 
         If you win a round the clock goes forward. You need to make it to 5pm.`,
-        reception: `After submitting this to game jam it went unnoticed and the game jam shut down shortly after.
-        I forced a colleague at work to play it, he let out a groan of pain when he had to replay the pacman level`,
+        reception: `I forced a colleague at work to play it, he let out a groan of pain when he had to replay the pacman level`,
         image: 'clock-watcher.jpg',
     },
 
@@ -95,7 +94,7 @@ const games = [
         platform: '🖥️ Play in browser for desktop',
         description: `Boris Johnson is trapped on a zipline and lying so much his pants are on fire. The fire brigade must put his pants out before it burns down London. Made for a Brexit themed jam a friend organised. Features text and audio clips of the various porkies he has told. They were not hard to find. `,
         instructions: `Move mouse to direct the water hose to put the flames out`,
-        reception: `Sadly this was not quite enough to stop Brexit. Although thanks to Boris' continued lying in Parliament it's still relevant today.`,
+        reception: `Sadly this was not quite enough to stop Brexit.`,
         image: 'boris-pants.png'
     },
 
