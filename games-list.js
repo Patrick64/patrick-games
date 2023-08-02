@@ -11,6 +11,17 @@ const games = [
         image: 'tumble-fish.jpg'
     },
 
+    {
+        name: 'Batdolphin',
+        url: 'https://patrick64.github.io/batdolphin/',
+        release: '2017-12-01',
+        platform: '🖥️ Play in browser for desktop',
+        description: `Enter the world of Bat Dolphin. 50% dolphin, 50% bat, 100% reliant on echo location! Made for the in-person Global Game Jam in Bristol in a team of 4.  Also has a <a href="https://globalgamejam.org/2017/games/bat-dolphin" target="_blank">windows download</a>`,
+        instructions: 'Fly through the air or swim through the water in this side scroller, where the terrain is invisible until hit with your echo location ability. Earn points by eating fireflies and fish, but beware each one you eat pushes you closer to being 100% bat or dolphin! Controls: Option 1. Use up/down arrows to move up/down and right arrow to accelerate. Press space bar to use your echo-location ability Option 2. Use W/S keys to move up/down and D to speed up. Press Lmb to activate your echo-location ability. Or why not use a controller?',
+        reception: 'I think we won the game jam for Bristol games hub. The team worked pretty well.',
+        image: 'batdolphin.jpg'
+    },
+
     // {
     //     name: 'Captain Nicebeard',
     //     url: 'http://nicebeard.patrickw.tech/',
@@ -23,6 +34,18 @@ const games = [
     //     reception: `This got <a href="https://2015.js13kgames.com/" target="_blank">3rd place for the Server category</a>. Unfortunately their server kept restarting and so losing the previous play throughs so it seemed fairly empty to people playing it.`,
     //     image: 'nicebeard.jpg'
     // },
+
+    {
+        name: 'Space Suckers',
+        url: 'https://jimmynoshoes.itch.io/space-suckers',
+        release: '2017-12-02',
+        platform: '🖥️ Play in browser for desktop only',
+        description: `Space monsters try to grab onto your space ship and you have to drop them in black holes to avoid
+        being dragged down.  Made for Ludum Dare game jam. I had help from my housemates Tim with coding and Pieta who did the lovely artwork. `,
+        instructions: 'Instructions on intro screen.',
+        reception: 'Overall it came 501st out of 1846 entries so not bad.',
+        image: 'space-suckers.png'
+    },
 
     {
         name: 'Swing the Cat',
@@ -76,17 +99,7 @@ const games = [
         image: 'boris-pants.png'
     },
 
-    {
-        name: 'Space Suckers',
-        url: 'https://jimmynoshoes.itch.io/space-suckers',
-        release: '2017-12-02',
-        platform: '🖥️ Play in browser for desktop only',
-        description: `Space monsters try to grab onto your space ship and you have to drop them in black holes to avoid
-        being dragged down.  Made for Ludum Dare game jam. I had help from my housemates Tim with coding and Pieta who did the lovely artwork. `,
-        instructions: 'Instructions on intro screen.',
-        reception: 'Overall it came 501st out of 1846 entries so not bad.',
-        image: 'space-suckers.png'
-    },
+
     {
         name: 'Ancient Snake',
         url: 'https://patrick64.github.io/AncientSnake/',
@@ -113,15 +126,6 @@ const games = [
     
     
     {
-        name: 'Batdolphin',
-        url: 'https://patrick64.github.io/batdolphin/',
-        release: '2017-12-01',
-        platform: '🖥️ Play in browser for desktop',
-        description: `Enter the world of Bat Dolphin. 50% dolphin, 50% bat, 100% reliant on echo location! Made for the in-person Global Game Jam in Bristol in a team of 4.  Also has a <a href="https://globalgamejam.org/2017/games/bat-dolphin" target="_blank">windows download</a>`,
-        instructions: 'Fly through the air or swim through the water in this side scroller, where the terrain is invisible until hit with your echo location ability. Earn points by eating fireflies and fish, but beware each one you eat pushes you closer to being 100% bat or dolphin! Controls: Option 1. Use up/down arrows to move up/down and right arrow to accelerate. Press space bar to use your echo-location ability Option 2. Use W/S keys to move up/down and D to speed up. Press Lmb to activate your echo-location ability. Or why not use a controller?',
-        reception: 'I think we won the game jam for Bristol games hub. The team worked pretty well.',
-        image: 'batdolphin.jpg'
-    }, {
         name: 'Gin Monster Bob',
         url: 'https://patrick64.github.io/gin-monster-bob/',
         release: '2012-12-17',
