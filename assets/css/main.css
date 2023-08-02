@@ -62,10 +62,6 @@ a {
   border-radius: 5px;;
 }
 
-.sort-by-wrap {
-  float:right;
-
-}
 
 .sort-by {
   font-size: inherit;
@@ -92,5 +88,10 @@ a {
   }
   .game-link {
     margin-bottom:0;
+  }
+
+  .sort-by-wrap {
+    float:right;
+
   }
 }

@@ -11,18 +11,18 @@ const games = [
         image: 'tumble-fish.jpg'
     },
 
-    {
-        name: 'Captain Nicebeard',
-        url: 'http://nicebeard.patrickw.tech/',
-        release: '2015-10-01',
-        platform: '🖥️ Play in browser for desktop',
-        description: `Captain Nicebeard is a reverse pirate where instead of making landlubbers walk the plank and plundering treasure he rescues ship mates and distributes coin.
-            Made for the Js13kGames game jam which had the theme 'Reversed'. It runs on a server and stores the play through of each player and then replays it back as another player on subsequent plays thus making it
-            a challenge to avoid other players and fire coins at them but without the need to have people playing at the same time. The whole game fits in 13kb. The backgrounds are procedurally generated. `,
-        instructions: 'Use arrow keys to rotate ship. Press Z/X to fire coins at other boats. Collect all the shipmates. Note it is kind of buggy when going to next level so it will restart you back sometimes sadly.',
-        reception: `This got <a href="https://2015.js13kgames.com/" target="_blank">3rd place for the Server category</a>. Unfortunately their server kept restarting and so losing the previous play throughs so it seemed fairly empty to people playing it.`,
-        image: 'nicebeard.jpg'
-    },
+    // {
+    //     name: 'Captain Nicebeard',
+    //     url: 'http://nicebeard.patrickw.tech/',
+    //     release: '2015-10-01',
+    //     platform: '🖥️ Play in browser for desktop',
+    //     description: `Captain Nicebeard is a reverse pirate where instead of making landlubbers walk the plank and plundering treasure he rescues ship mates and distributes coin.
+    //         Made for the Js13kGames game jam which had the theme 'Reversed'. It runs on a server and stores the play through of each player and then replays it back as another player on subsequent plays thus making it
+    //         a challenge to avoid other players and fire coins at them but without the need to have people playing at the same time. The whole game fits in 13kb. The backgrounds are procedurally generated. `,
+    //     instructions: 'Use arrow keys to rotate ship. Press Z/X to fire coins at other boats. Collect all the shipmates. Note it is kind of buggy when going to next level so it will restart you back sometimes sadly.',
+    //     reception: `This got <a href="https://2015.js13kgames.com/" target="_blank">3rd place for the Server category</a>. Unfortunately their server kept restarting and so losing the previous play throughs so it seemed fairly empty to people playing it.`,
+    //     image: 'nicebeard.jpg'
+    // },
 
     {
         name: 'Swing the Cat',
